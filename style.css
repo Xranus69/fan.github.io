@@ -1,0 +1,89 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.box{
+  height: 600px;
+  width: 1000px;
+  background: rgb(55, 55, 55);
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(255, 255, 255, 0.659) 0px 7px 29px 0px;
+  border-radius: 12px;
+}
+.fan{
+  margin-top: 6px;
+  margin-left: 14px;
+  display: grid;
+  place-items: center;
+}
+
+.wings{
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: conic-gradient(greenyellow 0deg, greenyellow 60deg, 
+  rgb(55, 55, 55) 60deg, rgb(55, 55, 55) 120deg, 
+  greenyellow 120deg, greenyellow 180deg,
+  rgb(55, 55, 55) 180deg, rgb(55, 55, 55) 240deg,
+  greenyellow 240deg, greenyellow 300deg,
+  rgb(55, 55, 55) 300deg, rgb(55, 55, 55) 300deg
+  );
+  border: 3px solid green;
+
+}
+
+.rod{
+  height: 300px;
+  width: 20px;
+  background: green;
+  
+}
+.base{
+  height: 30px;
+  width: 100px;
+  background: green;
+}
+/*
+.fan:hover .wings{
+  animation: spin 0.3s linear infinite;
+}
+*/
+.controls{
+  height: 500px;
+  width: auto;
+  display: grid;
+  align-items: end;
+  margin-top: 2px;
+  margin-right: 40px;
+}
+
+.controls button{
+  border: none;
+  color: greenyellow;
+  background-color: green;
+  padding: 9px 17px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.controls button:hover{
+  opacity: 0.9;
+}
+.controls button:active{
+  opacity: 0.7;
+}
+@keyframes spin {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
+
